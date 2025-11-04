@@ -1,0 +1,33 @@
+What status line did you get and what does it mean?
+http/1.1 200 OK
+mean there is a secure connection
+
+What is the Server header value? Is it specific (nginx/1.22) or generic?
+apache/2.4.7
+
+What is the <title> of the page (if present)?
+<title>Go ahead and ScanMe!</title>
+
+Do you see any <form> elements? What are their action attributes (copy them)?
+   <form class="nst-search" id="nst-head-search" action="/search/">
+    <input class="nst-search-q" name="q" type="search" placeholder="Site Search">
+    <button class="nst-search-button" title="Search">
+     <img style="width:100%;aspect-ratio:1/1;" alt="" aria-hidden="true"
+      src="/shared/images/nst-icons.svg#search">
+     </button>
+   </form>
+
+Did requests and curl report the same status and server header?
+yes
+
+If different, what header or other factor might explain it (redirects, default headers, user agent)?
+na
+
+Did the response change (status, server header, content-length) when the User-Agent was MyTestAgent/1.0?
+statues is the same
+header is gunicorn/19.9.0
+length 172
+
+If it had changed, what could that mean about the server’s defenses?
+
+maybe became worst as server type is diffrent meaning 
